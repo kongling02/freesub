@@ -4,29 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 01 - xiaohe",
-      "server": "152.53.1.40",
-      "server_port": 443,
-      "uuid": "edde565e-41f5-400e-84ea-7b87a3e84488",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "at.quattro-tech.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
-          "short_id": "43dcff53849b81e6"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇦🇹 奥地利 (Austria) 02 - xiaohe",
+      "tag": "🇦🇹 奥地利 (Austria) 01 - xiaohe",
       "server": "82.110.60.9",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -34,7 +13,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇦🇹 奥地利 (Austria) 03 - xiaohe",
+      "tag": "🇦🇹 奥地利 (Austria) 02 - xiaohe",
       "server": "212.183.88.136",
       "server_port": 443,
       "password": "humanity",
@@ -53,7 +32,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇦🇹 奥地利 (Austria) 04 - xiaohe",
+      "tag": "🇦🇹 奥地利 (Austria) 03 - xiaohe",
       "server": "212.183.88.136",
       "server_port": 443,
       "password": "humanity",
@@ -77,8 +56,7 @@
         "auto",
         "🇦🇹 奥地利 (Austria) 01 - xiaohe",
         "🇦🇹 奥地利 (Austria) 02 - xiaohe",
-        "🇦🇹 奥地利 (Austria) 03 - xiaohe",
-        "🇦🇹 奥地利 (Austria) 04 - xiaohe"
+        "🇦🇹 奥地利 (Austria) 03 - xiaohe"
       ]
     },
     {
@@ -87,8 +65,7 @@
       "outbounds": [
         "🇦🇹 奥地利 (Austria) 01 - xiaohe",
         "🇦🇹 奥地利 (Austria) 02 - xiaohe",
-        "🇦🇹 奥地利 (Austria) 03 - xiaohe",
-        "🇦🇹 奥地利 (Austria) 04 - xiaohe"
+        "🇦🇹 奥地利 (Austria) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
