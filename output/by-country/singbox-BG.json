@@ -4,12 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "trojan",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
-      "server": "213.183.63.60",
-      "server_port": 9066,
-      "method": "aes-256-cfb",
-      "password": "2KUaE2a8NWTvuCZ3"
+      "server": "199.232.78.170",
+      "server_port": 443,
+      "password": "mitivpn",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "@VPNine1",
+        "headers": {
+          "Host": "mitivpn---de--s---mitivpn-11.global.ssl.fastly.net"
+        }
+      }
     },
     {
       "type": "selector",
