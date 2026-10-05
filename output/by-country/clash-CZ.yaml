@@ -5,43 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 172.67.145.5
+  server: 167.82.76.7
   port: 443
   udp: true
-  type: vless
-  uuid: 20836693-ea23-4f40-a1e7-48a6da897917
-  tls: true
-  servername: netra-85a0ca.shoameni19.workers.dev
+  type: trojan
+  password: mitivpn
+  sni: ssl.fastly.com
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vl/bluTTbb7MO8rvX1COEYH4WW4qzbr2aui
-    headers:
-      Host: netra-85a0ca.shoameni19.workers.dev
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: kayoor.hivaphone.ir
-  port: 2045
-  udp: true
-  type: vless
-  uuid: d7e99010-e7c3-4978-9d30-2e63882dcfbe
-  network: h2
-  h2-opts:
-    host: []
-    path: /
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
-  - 🇨🇿 捷克 (Czech) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
-  - 🇨🇿 捷克 (Czech) 02 - xiaohe
 rules:
 - MATCH,PROXIES
