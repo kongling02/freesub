@@ -5,24 +5,20 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "104.18.34.21",
-      "server_port": 8443,
-      "uuid": "656bb400-3b7a-47e3-94b0-0362f3865072",
+      "tag": "🇬🇪 格鲁吉亚 (Georgia) 01 - xiaohe",
+      "server": "172.67.159.161",
+      "server_port": 443,
+      "uuid": "76ac91c5-ea82-4046-8ee7-2ffbb563ac94",
       "tls": {
         "enabled": true,
-        "server_name": "socks5.revil-time3.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "geo.shkola112.site",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/socks5://128.140.46.169:13482",
+        "path": "/api-vless",
         "headers": {
-          "Host": "socks5.revil-time3.workers.dev"
+          "Host": "geo.shkola112.site"
         }
       }
     },
@@ -31,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🇬🇪 格鲁吉亚 (Georgia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🇬🇪 格鲁吉亚 (Georgia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
