@@ -4,13 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇦🇹 奥地利 (Austria) 02 (家宽) - xiaohe
+- name: 🇦🇹 奥地利 (Austria) 01 (家宽) - xiaohe
   server: 31.77.227.6
   port: 52006
   udp: true
@@ -20,7 +14,28 @@ proxies:
   tls: true
   servername: bigdick.gamegrow.ru
   skip-cert-verify: false
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+- name: 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
+  server: 116.204.164.5
+  port: 7443
+  udp: true
+  type: vless
+  uuid: 2416ff70-cb17-4cdc-834d-a89c00261e01
+  tls: true
+  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
+  server: test.keoplentuio.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
   server: 172.66.152.4
   port: 443
   udp: true
@@ -29,6 +44,7 @@ proxies:
   tls: true
   servername: argo6.5671234.xyz
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /e8e2cecb6188f7fb
@@ -39,16 +55,18 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
-  - 🇦🇹 奥地利 (Austria) 02 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  - 🇦🇹 奥地利 (Austria) 01 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
-  - 🇦🇹 奥地利 (Austria) 02 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  - 🇦🇹 奥地利 (Austria) 01 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

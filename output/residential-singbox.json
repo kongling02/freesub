@@ -5,14 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe",
-      "server": "test.keoplentuio.xyz",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 02 (家宽) - xiaohe",
+      "tag": "🇦🇹 奥地利 (Austria) 01 (家宽) - xiaohe",
       "server": "31.77.227.6",
       "server_port": 52006,
       "uuid": "bc659d88-a1e0-076c-a49a-7b51b26a7a7f",
@@ -25,14 +18,48 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
+      "tag": "🇯🇵 日本 (Japan) 02 (家宽) - xiaohe",
+      "server": "116.204.164.5",
+      "server_port": 7443,
+      "uuid": "2416ff70-cb17-4cdc-834d-a89c00261e01",
+      "tls": {
+        "enabled": true,
+        "server_name": "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe",
+      "server": "test.keoplentuio.xyz",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe",
       "server": "172.66.152.4",
       "server_port": 443,
       "uuid": "08aaab35-a42d-4755-a03e-20c18cb1b3e8",
       "tls": {
         "enabled": true,
         "server_name": "argo6.5671234.xyz",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
@@ -47,18 +74,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe",
-        "🇦🇹 奥地利 (Austria) 02 (家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe"
+        "🇦🇹 奥地利 (Austria) 01 (家宽) - xiaohe",
+        "🇯🇵 日本 (Japan) 02 (家宽) - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe",
-        "🇦🇹 奥地利 (Austria) 02 (家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe"
+        "🇦🇹 奥地利 (Austria) 01 (家宽) - xiaohe",
+        "🇯🇵 日本 (Japan) 02 (家宽) - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,31 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇪 格鲁吉亚 (Georgia) 01 - xiaohe
-  server: 104.21.50.89
-  port: 443
+- name: 🇨🇿 捷克 (Czech) 01 - xiaohe
+  server: 104.18.34.21
+  port: 8443
   udp: true
   type: vless
-  uuid: 76ac91c5-ea82-4046-8ee7-2ffbb563ac94
+  uuid: 656bb400-3b7a-47e3-94b0-0362f3865072
   tls: true
-  servername: geo.shkola112.site
+  servername: socks5.revil-time3.workers.dev
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /api-vless
+    path: /socks5://128.140.46.169:13482
     headers:
-      Host: geo.shkola112.site
+      Host: socks5.revil-time3.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇪 格鲁吉亚 (Georgia) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇪 格鲁吉亚 (Georgia) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 01 - xiaohe
 rules:
 - MATCH,PROXIES
